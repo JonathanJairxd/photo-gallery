@@ -14,4 +14,9 @@ export class Tab2Page {
     addPhotoToGallery(){
       this.photoService.addNewToGallery();
     }
+
+    addLowQualityPhoto() {
+      this.photoService.addNewToGallery(50);
+    }
+    
 }

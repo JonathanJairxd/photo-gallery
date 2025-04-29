@@ -8,10 +8,24 @@
 
 <ion-content>
 
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="addPhotoToGallery()">
-      <ion-icon name="camera"></ion-icon>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" style="display: flex; flex-direction: row; gap: 10px;">
+
+    <!-- Boton con 100% calidad -->
+    <ion-fab-button (click)="addPhotoToGallery()" color="primary">
+      <div style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <ion-icon name="camera" style="font-size: 25px;"></ion-icon>
+        <span style="font-size: 10px">100%</span>
+      </div>
     </ion-fab-button>
-  </ion-fab>
   
+    <!-- Boton con 50% calidad -->
+    <ion-fab-button (click)="addLowQualityPhoto()">
+      <div style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <ion-icon name="camera" style="font-size: 25px;"></ion-icon>
+        <span style="font-size: 10px">50%</span>
+      </div>
+    </ion-fab-button>
+  
+  </ion-fab>
+
 </ion-content>
