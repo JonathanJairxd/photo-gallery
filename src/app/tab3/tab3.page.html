@@ -1,12 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Photo Gallery :3
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="loadPhotos()">
+      <ion-icon name="image"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
   <ion-grid>
     <ion-row>
@@ -18,5 +24,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+
   
 </ion-content>
